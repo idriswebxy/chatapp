@@ -1,0 +1,24 @@
+{
+  "name": "Chatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pusher/chatkit-client": "^1.5.0",
+    "@pusher/chatkit-server": "^1.1.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.15",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
