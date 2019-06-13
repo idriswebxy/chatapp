@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm start && cd client && npm start && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
 
   },
   "keywords": [],
