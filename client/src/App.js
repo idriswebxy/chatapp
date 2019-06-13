@@ -9,7 +9,7 @@ class App extends React.Component {
   };
 
   onUsernameSubmitted = username => {
-    fetch("http://localhost:3000/users", {
+    fetch("https://chat-app0-1.herokuapp.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

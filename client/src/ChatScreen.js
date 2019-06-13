@@ -31,7 +31,7 @@ export default class ChatScreen extends Component {
       instanceLocator: "v1:us1:422554a0-b312-4c16-88c2-d13ac9a9da73",
       userId: this.props.currentUsername,
       tokenProvider: new Chatkit.TokenProvider({
-        url: "http://localhost:3000/authenticate"
+        url: "https://chat-app0-1.herokuapp.com/authenticate"
       })
     });
 
@@ -40,7 +40,7 @@ export default class ChatScreen extends Component {
       .then(currentUser => {
         this.setState({ currentUser });
         return currentUser.subscribeToRoom({
-          roomId: "21255813",
+          roomId: "21366304",
           messageLimit: 100,
           hooks: {
             onUserStartedTyping: user => {
@@ -60,7 +60,7 @@ export default class ChatScreen extends Component {
                 messages: [...this.state.messages, message]
               });
             },
-            onPresenceChange: () => this.forceUpdate()
+            onPresenceChange: () => this.forceUpdate(),
           }
         });
       })
